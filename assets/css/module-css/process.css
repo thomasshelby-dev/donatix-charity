@@ -1,0 +1,169 @@
+/*==============================================
+    Process One
+===============================================*/
+.work-process-one {
+    position: relative;
+    display: block;
+    padding: 120px 0 41px;
+    z-index: 1;
+}
+
+.work-process-one .shape1 {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    z-index: -1;
+}
+
+.work-process-one .shape2 {
+    position: absolute;
+    top: 45px;
+    right: -30px;
+    z-index: -1;
+}
+
+.work-process-one .shape3 {
+    position: absolute;
+    top: 205px;
+    right: -30px;
+    z-index: -1;
+}
+
+.work-process-one__single {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.work-process-one__single .shape4 {
+    position: absolute;
+    bottom: 95px;
+    right: -5px;
+    height: 300px;
+    border: 1px dashed var(--donatix-secondary);
+    transform: rotate(53deg);
+}
+
+.work-process-one__single .shape5 {
+    position: absolute;
+    top: 50px;
+    right: -5px;
+    height: 300px;
+    border: 1px dashed var(--donatix-secondary);
+    transform: rotate(-53deg);
+}
+
+.work-process-one__single .shape6 {
+    position: absolute;
+    bottom: 80px;
+    right: -5px;
+    height: 300px;
+    border: 1px dashed var(--donatix-secondary);
+    transform: rotate(53deg);
+}
+
+.work-process-one__single-count-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    border-top: 5px solid var(--donatix-base);
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    box-shadow: 0px 4px 20px rgb(0, 0, 0, 0.05);
+    margin: 0 auto 22px;
+}
+
+.work-process-one__single-count-text h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.work-process-one__single h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.work-process-one__single h2 a {
+    color: var(--donatix-black);
+}
+
+.work-process-one__single h2 a:hover {
+    color: var(--donatix-base);
+}
+
+.work-process-one__single p {
+    margin: 0;
+}
+
+.work-process-one__single-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 217px;
+    height: 221px;
+    margin: 4px auto 0px;
+    z-index: 1;
+}
+
+.work-process-one__single-icon-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.work-process-one__single-icon-inner {
+    position: relative;
+    display: block;
+}
+
+.work-process-one__single-icon-inner span {
+    position: relative;
+    display: block;
+    line-height: 221px;
+}
+
+.work-process-one__single-icon-inner span::before {
+    position: relative;
+    display: inline-block;
+    color: var(--donatix-black);
+    font-size: 70px;
+    transition-delay: 0.1s;
+    transition: all 500ms ease;
+}
+
+.work-process-one__single:hover .work-process-one__single-icon-inner span::before {
+    transform: rotateY(180deg);
+    transition-delay: 0.1s;
+}
+
+.work-process-one__single.style2 {
+    position: relative;
+    display: block;
+    margin-top: -18px;
+}
+
+.work-process-one__single.style2 .work-process-one__single-icon {
+    margin: 0px auto 0px;
+}
+
+.work-process-one__single.style2 .work-process-one__single-count-text {
+    margin: -19px auto 22px;
+}
