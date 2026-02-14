@@ -1,0 +1,925 @@
+/*==============================================
+   Team One
+===============================================*/
+.team-one {
+    position: relative;
+    display: block;
+    background: var(--donatix-gray-bg);
+    padding: 120px 0 90px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.team-one__pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.team-one .shape1 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+}
+
+.team-one__single {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.team-one__single-img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: var(--donatix-primary);
+    border-radius: 20px;
+}
+
+.team-one__single-img img {
+    width: 100%;
+    transition: .5s ease;
+    transform: scale(1.05);
+}
+
+.team-one__single:hover .team-one__single-img img {
+    transform: scale(1);
+    opacity: 0.4;
+}
+
+.team-one__single-content {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    background: var(--donatix-white);
+    padding: 20px 20px 12px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transform: perspective(400px) rotateX(50deg) scaleY(0.6);
+    -ms-transform: perspective(400px) rotateX(50deg) scaleY(0.6);
+    transform: perspective(400px) rotateX(50deg) scaleY(0.6);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    transition-property: all;
+    opacity: 0;
+    z-index: 2;
+}
+
+.team-one__single:hover .team-one__single-content {
+    -webkit-transform: perspective(400px) rotateX(0deg) scaleY(1.0);
+    -ms-transform: perspective(400px) rotateX(0deg) scaleY(1.0);
+    transform: perspective(400px) rotateX(0deg) scaleY(1.0);
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+    opacity: 1;
+}
+
+.team-one__single-social-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .1s;
+    transition-property: all;
+}
+
+.team-one__single:hover .team-one__single-social-links {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+}
+
+.team-one__single-social-links a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--donatix-white);
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+    z-index: 1;
+}
+
+.team-one__single-social-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--donatix-base);
+    transform: scale(0.6);
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: -1;
+}
+
+.team-one__single-social-links a:hover::before {
+    transform: scale(1.0);
+    opacity: 1;
+}
+
+.team-one__single-social-links a+a {
+    margin-left: 5px;
+}
+
+.team-one__single-social-links a span::before {
+    position: relative;
+    display: inline-block;
+    color: var(--donatix-secondary);
+    font-size: 15px;
+    line-height: 15px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.team-one__single-social-links a:hover span::before {
+    color: var(--donatix-white);
+}
+
+.team-one__single-content .text-box {
+    position: relative;
+    display: block;
+    transform: translateY(50%);
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .1s;
+    transition-property: all;
+}
+
+.team-one__single:hover .team-one__single-content .text-box {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+}
+
+.team-one__single-content .text-box h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 17px;
+}
+
+.team-one__single-content .text-box h2 a {
+    color: var(--donatix-black);
+}
+
+.team-one__single-content .text-box h2 a:hover {
+    color: var(--donatix-base);
+}
+
+.team-one__single-content .text-box p {
+    margin: 0;
+}
+
+/*==============================================
+   Team Two
+===============================================*/
+.team-one--two {
+    position: relative;
+    display: block;
+    background: var(--donatix-white);
+    z-index: 1;
+}
+
+.team-one--two__shape1 {
+    position: absolute;
+    left: 0px;
+    bottom: 140px;
+    z-index: -1;
+}
+
+.team-one--two__shape2 {
+    position: absolute;
+    top: 160px;
+    right: 80px;
+    z-index: -1;
+}
+
+.team-one--two .team-one__single {
+    position: relative;
+    display: block;
+    padding-top: 3px;
+    transition: .5s ease;
+    z-index: 1;
+}
+
+.team-one--two .team-one__single:hover {
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+
+.team-one--two .team-one__single::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: var(--donatix-secondary);
+    border-radius: 20px;
+    content: "";
+    z-index: -1;
+}
+
+.team-one--two .team-one__single::after {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: var(--donatix-base);
+    border-radius: 20px;
+    content: "";
+    z-index: -1;
+}
+
+.team-one--two .team-one__single-img {
+    background: transparent;
+}
+
+.team-one--two .team-one__single-img::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+    background: rgba(var(--donatix-primary-rgb), 0.6);
+    border-radius: 20px;
+    opacity: 0;
+    z-index: 1;
+    content: "";
+}
+
+.team-one--two .team-one__single:hover .team-one__single-img::before {
+    opacity: 1;
+}
+
+.team-one--two .team-one__single-img img {
+    transition: .5s ease;
+    transform: scale(1.05);
+}
+
+.team-one--two .team-one__single:hover .team-one__single-img img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.team-one--two .team-one__single-content {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    background: var(--donatix-white);
+    padding: 12px 20px 12px;
+    border-radius: 10px;
+    -webkit-transform: perspective(0px) rotateX(0deg) scaleY(1.0);
+    -ms-transform: perspective(0px) rotateX(0deg) scaleY(1.0);
+    transform: perspective(0px) rotateX(0deg) scaleY(1.0);
+    opacity: 1;
+}
+
+.team-one--two .team-one__single-content .text-box {
+    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
+}
+
+.team-one--two .team-one__single-content .text-box h2 {
+    margin-top: 0px;
+}
+
+.team-two__social {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+}
+
+.team-two__social span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--donatix-white);
+    background-color: var(--donatix-secondary);
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.team-two__social span:hover {
+    background: var(--donatix-base);
+    transform: rotate(45deg);
+}
+
+.team-two__social ul {
+    position: absolute;
+    top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    flex-direction: column;
+    white-space: nowrap;
+    visibility: hidden;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: scaleY(0) translateZ(100px);
+    transform: scaleY(0) translateZ(100px);
+    -webkit-transition: opacity 500ms ease, visibility 500ms ease, -webkit-transform 700ms ease;
+    transition: opacity 500ms ease, visibility 500ms ease, -webkit-transform 700ms ease;
+    transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease;
+    transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease, -webkit-transform 700ms ease;
+    z-index: 1;
+}
+
+.team-two__social:hover ul {
+    visibility: visible;
+    -webkit-transform: scaleY(1) translateZ(0px);
+    transform: scaleY(1) translateZ(0px);
+}
+
+.team-two__social ul li {
+    position: relative;
+    display: block;
+}
+
+.team-two__social ul li+li {
+    margin-top: 5px;
+}
+
+.team-two__social ul li:last-child {
+    margin-bottom: 0;
+}
+
+.team-two__social ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: var(--donatix-secondary);
+    border-radius: 50%;
+    background-color: var(--donatix-white);
+    text-align: center;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+    z-index: 1;
+}
+
+.team-two__social ul li a:hover {
+    color: var(--donatix-white);
+}
+
+.team-two__social ul li a:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: var(--donatix-base);
+    content: "";
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(0.7);
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+    z-index: -1;
+}
+
+.team-two__social ul li:hover a:before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*==============================================
+   Team Details
+===============================================*/
+.team-details {
+    position: relative;
+    display: block;
+    background: var(--donatix-white);
+    padding: 120px 0px 97px;
+    z-index: 1;
+}
+
+.team-details__top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    padding: 60px 60px 60px;
+    border-radius: 50px;
+}
+
+.team-details__top-img {
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.team-details__top-img img {
+    width: 100%;
+}
+
+.team-details__top-content {
+    position: relative;
+    display: block;
+    margin-left: 60px;
+    flex: 1;
+}
+
+.team-details__top-content-top {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.team-details__top-content-top .text-box {
+    position: relative;
+    display: block;
+    margin-top: -9px;
+}
+
+.team-details__top-content-top .text-box h2 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.team-details__top-content-top .text-box p {
+    color: var(--donatix-secondary);
+    margin: 0;
+}
+
+.team-details__top-content-top .social-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.team-details__top-content-top .social-links a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #d8dde1;
+    color: var(--donatix-black);
+}
+
+.team-details__top-content-top .social-links a:hover {
+    color: var(--donatix-white);
+    background: var(--donatix-base);
+}
+
+.team-details__top-content-top .social-links a+a {
+    margin-left: 6px;
+}
+
+.team-details__top-content-top .social-links a span::before {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.team-details__top-content-text {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+}
+
+.team-details__top-content-text p {
+    margin: 0;
+}
+
+.team-details__top-content-info-box {
+    position: relative;
+    display: block;
+    border: 1px solid #d8dde1;
+    padding: 25px 30px 25px;
+    border-radius: 30px;
+    margin-top: 32px;
+}
+
+.team-details__top-content-info-box::before {
+    position: absolute;
+    left: 52%;
+    top: 0px;
+    bottom: 0px;
+    width: 1px;
+    background: #d8dde1;
+    content: '';
+}
+
+.team-details__top-content-info-box::after {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    height: 1px;
+    background: #d8dde1;
+    content: '';
+}
+
+.team-details__top-content-info-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-details__top-content-info-list.style2 {
+    margin-top: 56px;
+}
+
+.team-details__top-content-info-list.style2 li:nth-child(2) {
+    left: -17px;
+}
+
+.team-details__top-content-info-list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.team-details__top-content-info-list li .icon-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--donatix-base);
+    width: 50px;
+    height: 50px;
+    background: var(--donatix-white);
+    box-shadow: 0px 10px 40px rgb(0, 0, 0, 0.06);
+    border-radius: 50%;
+}
+
+.team-details__top-content-info-list li .icon-box span::before {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.team-details__top-content-info-list li .content-box {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.team-details__top-content-info-list li .content-box p {
+    margin: 0;
+}
+
+.team-details__top-content-info-list li .content-box h4 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.team-details__top-content-info-list li .content-box h4 a {
+    color: var(--donatix-black);
+}
+
+.team-details__top-content-info-list li .content-box h4 a:hover {
+    color: var(--donatix-base);
+}
+
+.team-details__top-content-btn {
+    position: relative;
+    display: block;
+    margin-top: 35px;
+}
+
+.team-details__bottom {
+    position: relative;
+    display: block;
+    margin-top: 51px;
+}
+
+.team-details__bottom-left {
+    position: relative;
+    display: block;
+}
+
+.team-details__bottom-left h2 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 21px;
+}
+
+.team-details__bottom-left .text1 {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.team-details__bottom-left .text2 {
+    margin: 0;
+}
+
+.team-details__progress {
+    position: relative;
+    display: block;
+    margin-left: 40px;
+}
+
+.team-details__progress h2 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 21px;
+}
+
+.team-details__progress p {
+    margin: 0;
+}
+
+.team-details__progress-box {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+}
+
+.team-details__progress-single {
+    position: relative;
+    display: block;
+    margin-bottom: 23px;
+}
+
+.team-details__progress-single .title-box {
+    position: relative;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.team-details__progress-single .title-box p {
+    color: var(--donatix-black);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: var(--donatix-font-two);
+    margin: 0;
+}
+
+.team-details__progress-single .inner {
+    position: relative;
+    display: block;
+}
+
+.team-details__progress-single .inner .bar {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background-color: transparent;
+    border: 1px solid var(--donatix-base);
+    border-radius: 10px;
+}
+
+.team-details__progress-single .inner .bar-inner {
+    position: relative;
+    display: block;
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 0px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: var(--donatix-base);
+    -webkit-transition: all 1500ms ease;
+    -ms-transition: all 1500ms ease;
+    -o-transition: all 1500ms ease;
+    -moz-transition: all 1500ms ease;
+    transition: all 1500ms ease;
+}
+
+.team-details__progress-single .inner .count-text {
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    color: var(--donatix-base);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: var(--donatix-font-two);
+    z-index: 1;
+}
+
+/*==============================================
+   Become Volunteer Page
+===============================================*/
+.become-volunteer-page {
+    position: relative;
+    display: block;
+    background: var(--donatix-white);
+    padding: 120px 0px 120px;
+    z-index: 1;
+}
+
+.become-volunteer-page__content {
+    position: relative;
+    display: block;
+    margin-right: 70px;
+}
+
+.become-volunteer-page__content-text1 {
+    position: relative;
+    display: block;
+}
+
+.become-volunteer-page__content-text1 h2 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 800;
+}
+
+.become-volunteer-page__content-text1 .img-box {
+    position: relative;
+    display: block;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 27px;
+}
+
+.become-volunteer-page__content-text1 .img-box img {
+    width: 100%;
+}
+
+.become-volunteer-page__content-text2 {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+}
+
+.become-volunteer-page__content-text2 h2 {
+    color: var(--donatix-primary);
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 21px;
+}
+
+.become-volunteer-page__content-text2 p {
+    margin: 0;
+}
+
+.become-volunteer-page__content-text2-quote {
+    position: relative;
+    display: block;
+    background: var(--donatix-gray-bg);
+    border-left: 3px solid var(--donatix-base);
+    border-right: 3px solid var(--donatix-base);
+    border-radius: 15px;
+    padding: 13px 20px 12px;
+    overflow: hidden;
+    margin-top: 32px;
+    margin-bottom: 23px;
+}
+
+.become-volunteer-page__content-text2-quote p {
+    color: var(--donatix-black);
+    font-weight: 600;
+    font-family: var(--donatix-font-two);
+}
+
+.become-volunteer-page__content-text2-list {
+    position: relative;
+    display: block;
+}
+
+.become-volunteer-page__content-text2-list li {
+    position: relative;
+    display: block;
+}
+
+.become-volunteer-page__content-text2-list li+li {
+    margin-top: 9px;
+}
+
+.become-volunteer-page__content-text2-list li p {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    padding-left: 25px;
+    font-family: var(--donatix-font-two);
+}
+
+.become-volunteer-page__content-text2-list li p::before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--donatix-base);
+    border-radius: 50%;
+    content: "";
+}
+
+.become-volunteer-page__form {
+    position: relative;
+    display: block;
+    border: 1px solid #d8dde1;
+    padding: 60px 60px 60px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.comment-form__input-box .select-box {
+    width: 100%;
+}
+
+.comment-form__input-box .nice-select {
+    height: 56px;
+    line-height: 56px;
+    width: 100%;
+    border-radius: 28px;
+    background-color: var(--donatix-white);
+    border: 1px solid #d8dde1;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--donatix-gray);
+    display: block;
+}
+
+.comment-form__input-box .nice-select:after {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid #797d88;
+    border-right: 2px solid #797d88;
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.comment-form__input-box .nice-select .option {
+    color: var(--donatix-white);
+}
+
+.become-volunteer-page__form .comment-form__btn-box .thm-btn {
+    width: auto;
+}

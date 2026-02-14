@@ -1,0 +1,294 @@
+/*==============================================
+   Donation One
+===============================================*/
+.donation-one {
+   position: relative;
+   display: block;
+   padding: 120px 0px 120px;
+   margin: 0px 50px 0px;
+   border-radius: 50px;
+   overflow: hidden;
+   z-index: 1;
+}
+
+.donation-one__bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-attachment: scroll;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   z-index: -1;
+}
+
+.donation-one__bg::before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: rgba(var(--donatix-primary-rgb), 0.85);
+   mix-blend-mode: multiply;
+   content: "";
+}
+
+.donation-one .shape1 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   mix-blend-mode: soft-light;
+   opacity: 0.6;
+   z-index: -1;
+}
+
+.donation-one .shape2 {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   mix-blend-mode: soft-light;
+   opacity: 0.6;
+   z-index: -1;
+}
+
+.donation-one__inner {
+   position: relative;
+   display: block;
+   max-width: 630px;
+   width: 100%;
+   float: right;
+}
+
+.donation-one__inner .sec-title__title {
+   color: var(--donatix-white);
+}
+
+.donation-one__inner-box {
+   position: relative;
+   display: block;
+   background: var(--donatix-white);
+   padding: 57px 60px 60px;
+   border-radius: 30px;
+   z-index: 1;
+}
+
+.donation-one__img {
+   position: relative;
+   display: block;
+}
+
+.donation-one__img ul {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.donation-one__img ul li {
+   position: relative;
+   display: block;
+}
+
+.donation-one__img ul li+li {
+   margin-left: -25px;
+}
+
+.donation-one__img ul li .img-box {
+   position: relative;
+   display: block;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   overflow: hidden;
+   border: 3px solid var(--donatix-white);
+}
+
+.donation-one__img ul li .img-box img {
+   width: 100%;
+}
+
+.donation-one__img ul li .counter-box {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 80px;
+   height: 80px;
+   background: var(--donatix-base);
+   border: 1px solid var(--donatix-white);
+   border-radius: 50%;
+}
+
+.donation-one__img ul li .counter-box p {
+   color: var(--donatix-white);
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 800;
+}
+
+.donation-one__img ul li .counter-box .odometer.odometer-auto-theme,
+.donation-one__img ul li .counter-box .odometer.odometer-theme-default {
+   font-family: var(--donatix-font);
+   line-height: 26px;
+}
+
+.donation-one__img ul li .counter-box p .plus {
+   position: relative;
+   display: inline-block;
+   font-size: 9px;
+   line-height: 9px;
+   font-weight: 700;
+   margin-left: 2px;
+   top: -1px;
+}
+
+.donation-one__title {
+   position: relative;
+   display: block;
+   margin-top: 18px;
+}
+
+.donation-one__title h2 {
+   font-size: 36px;
+   line-height: 46px;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+
+.donation-one__progress {
+   position: relative;
+   display: block;
+   margin-top: 33px;
+}
+
+.donation-one__progress .bar {
+   position: relative;
+   width: 100%;
+   height: 6px;
+   background-color: #c5cecd;
+   border-radius: 10px;
+}
+
+.donation-one__progress .bar-inner {
+   position: relative;
+   display: block;
+   width: 0px;
+   height: 6px;
+   border-radius: 10px;
+   background-color: var(--donatix-base);
+   -webkit-transition: all 1500ms ease;
+   -ms-transition: all 1500ms ease;
+   -o-transition: all 1500ms ease;
+   -moz-transition: all 1500ms ease;
+   transition: all 1500ms ease;
+}
+
+.donation-one__progress .bar-inner::before {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+   width: 16px;
+   height: 16px;
+   background: var(--donatix-white);
+   border: 5px solid var(--donatix-base);
+   border-radius: 50%;
+   content: "";
+}
+
+.donation-one__text1 {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 18px;
+}
+
+.donation-one__text1-single {
+   position: relative;
+   display: block;
+}
+
+.donation-one__text1-single p {
+   color: var(--donatix-black);
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 600;
+   text-transform: capitalize;
+   font-family: var(--donatix-font-two);
+}
+
+.donation-one__text1-single.clr2 p {
+   color: var(--donatix-secondary);
+}
+
+.donation-one__text1-single h2 {
+   font-size: 24px;
+   line-height: 34px;
+   font-weight: 700;
+}
+
+.donation-one__text1-single.clr2 h2 {
+   color: var(--donatix-secondary);
+}
+
+.donation-one__donate-box {
+   position: relative;
+   display: block;
+   margin-top: 31px;
+}
+
+.donation-one__donate-box .donate-amount {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin-bottom: 40px;
+}
+
+.donation-one__donate-box .donate-amount .amount-btn {
+   color: var(--donatix-gray);
+   padding: 10px 30px 9px;
+   background-color: #f6f6f6;
+   transition: all 0.4s ease-in-out;
+   border: none;
+   font-size: 16px;
+   line-height: 16px;
+   border-radius: 30px;
+}
+
+.donation-one__donate-box .donate-amount .amount-btn.active {
+   background-color: var(--donatix-base);
+   color: var(--donatix-white);
+}
+
+.donation-one__donate-box .donate-now {
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.donation-one__donate-box .donate-now input {
+   color: var(--donatix-gray);
+   font-size: 16px;
+   font-weight: 600;
+   background-color: #f6f6f6;
+   max-width: 175px;
+   width: 100%;
+   height: 50px;
+   padding: 0px 20px 0px;
+   border: none;
+   outline: none;
+   border-radius: 30px;
+}
+
+.donation-one__btn-box {
+   position: relative;
+   display: block;
+}
+
+.donation-one__btn-box .thm-btn {
+   padding: 16px 35px 16px;
+}
